@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>llms.txt scoreboard</title>
+<meta name="description" content="Weekly health scan of major docs sites' llms.txt files: dead links, HTML shells, and missing files, checked against what each site actually serves.">
+<style>
+:root {
+  color-scheme: light;
+  --surface: #fcfcfb; --text: #0b0b0b; --secondary: #52514e; --muted: #8a897f;
+  --good: #0ca30c; --critical: #d03b3b; --warning: #b07700; --line: #e5e4df;
+}
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark;
+    --surface: #1a1a19; --text: #ffffff; --secondary: #c3c2b7; --muted: #8a897f;
+    --good: #0ca30c; --critical: #d03b3b; --warning: #fab219; --line: #33322f;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0 auto; max-width: 72rem; padding: 2rem 1rem 4rem; background: var(--surface);
+  color: var(--text); font: 16px/1.55 system-ui, sans-serif; }
+h1 { font-size: 1.6rem; margin: 0 0 .3rem; }
+.sub { color: var(--secondary); margin: 0 0 1.6rem; }
+.tiles { display: flex; flex-wrap: wrap; gap: 1rem; margin: 0 0 1.8rem; }
+.tile { border: 1px solid var(--line); border-radius: 8px; padding: .7rem 1.1rem; min-width: 8.5rem; }
+.tile b { display: block; font-size: 1.5rem; }
+.tile span { color: var(--secondary); font-size: .85rem; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; padding: .5rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--secondary); font-weight: 600; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.status { font-weight: 600; white-space: nowrap; }
+.note { color: var(--secondary); font-size: .85rem; word-break: break-all; max-width: 28rem; }
+a { color: inherit; }
+footer { margin-top: 2rem; color: var(--secondary); font-size: .9rem; }
+footer code { font-size: .85em; }
+</style>
+</head>
+<body>
+<h1>llms.txt scoreboard</h1>
+<p class="sub">Weekly scan of major docs sites: does the deployed site actually serve what its llms.txt promises?
+Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-check</a> on 2026-08-09 (sampling up to 25 links per site).</p>
+
+<div class="tiles">
+  <div class="tile"><b>40</b><span>sites scanned</span></div>
+  <div class="tile"><b style="color:var(--good)">24</b><span>✓ passing</span></div>
+  <div class="tile"><b style="color:var(--critical)">7</b><span>✗ broken</span></div>
+  <div class="tile"><b>9</b><span>– no llms.txt</span></div>
+  <div class="tile"><b>17</b><span>dead links found</span></div>
+</div>
+
+<div class="tablewrap">
+<table>
+  <thead><tr><th>site</th><th>status</th><th class="num">links checked</th><th class="num">dead</th><th>first failure</th></tr></thead>
+  <tbody>
+<tr>
+    <td><a href="https://trpc.io">trpc.io</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">25 of 89</td>
+    <td class="num">6</td>
+    <td class="note">https://trpc.io/docs/client/nextjs/overview (http-404)</td>
+  </tr>
+<tr>
+    <td><a href="https://orm.drizzle.team">orm.drizzle.team</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">25 of 442</td>
+    <td class="num">4</td>
+    <td class="note">https://orm.drizzle.team/docs/pg/connect-overview (http-404)</td>
+  </tr>
+<tr>
+    <td><a href="https://grafana.com/docs">grafana.com/docs</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">25 of 91</td>
+    <td class="num">3</td>
+    <td class="note">https://grafana.com/docs/learning-hub.md (http-404)</td>
+  </tr>
+<tr>
+    <td><a href="https://docs.github.com">docs.github.com</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">25 of 117</td>
+    <td class="num">1</td>
+    <td class="note">https://docs.github.com/api/article/body (http-400)</td>
+  </tr>
+<tr>
+    <td><a href="https://docs.litellm.ai">docs.litellm.ai</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">25 of 52</td>
+    <td class="num">1</td>
+    <td class="note">https://docs.litellm.ai/release_notes/archive (http-404)</td>
+  </tr>
+<tr>
+    <td><a href="https://docs.stripe.com">docs.stripe.com</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">25 of 471</td>
+    <td class="num">1</td>
+    <td class="note">https://docs.stripe.com/reports/administrative-facilitation-fee-report.md (http-404)</td>
+  </tr>
+<tr>
+    <td><a href="https://langchain-ai.github.io/langgraph">langchain-ai.github.io/langgraph</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">13 of 13</td>
+    <td class="num">1</td>
+    <td class="note">https://docs.langchain.com/oss/python/langgraph/why-langgraph (http-404)</td>
+  </tr>
+<tr>
+    <td><a href="https://ai-sdk.dev">ai-sdk.dev</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">10 of 10</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://bun.sh">bun.sh</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 320</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://cursor.com">cursor.com</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">0 of 0</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://docs.anthropic.com">docs.anthropic.com</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 553</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://docs.docker.com">docs.docker.com</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 39</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://docs.expo.dev">docs.expo.dev</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 547</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://docs.pydantic.dev">docs.pydantic.dev</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 88</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://docs.railway.com">docs.railway.com</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 377</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://docs.temporal.io">docs.temporal.io</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 122</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://elevenlabs.io/docs">elevenlabs.io/docs</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 729</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://hono.dev">hono.dev</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 89</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://mintlify.com/docs">mintlify.com/docs</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 241</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://modelcontextprotocol.io">modelcontextprotocol.io</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 144</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://nextjs.org">nextjs.org</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 35</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://posthog.com">posthog.com</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 1982</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://react.dev">react.dev</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 177</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://supabase.com">supabase.com</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 30</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://svelte.dev">svelte.dev</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">7 of 7</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://turbo.build">turbo.build</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 101</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://vercel.com">vercel.com</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 1734</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://vite.dev">vite.dev</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 43</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://vuejs.org">vuejs.org</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 94</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://www.prisma.io/docs">www.prisma.io/docs</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 35</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://zod.dev">zod.dev</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 313</td>
+    <td class="num">0</td>
+    <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://biomejs.dev">biomejs.dev</a></td>
+    <td><span class="status" style="color:var(--muted)">–&nbsp;no llms.txt</span></td>
+    <td class="num">–</td>
+    <td class="num">–</td>
+    <td class="note">llms.txt returns 404</td>
+  </tr>
+<tr>
+    <td><a href="https://docs.astro.build">docs.astro.build</a></td>
+    <td><span class="status" style="color:var(--muted)">–&nbsp;no llms.txt</span></td>
+    <td class="num">–</td>
+    <td class="num">–</td>
+    <td class="note">llms.txt returns 404</td>
+  </tr>
+<tr>
+    <td><a href="https://docs.npmjs.com">docs.npmjs.com</a></td>
+    <td><span class="status" style="color:var(--muted)">–&nbsp;no llms.txt</span></td>
+    <td class="num">–</td>
+    <td class="num">–</td>
+    <td class="note">llms.txt returns 404</td>
+  </tr>
+<tr>
+    <td><a href="https://fastapi.tiangolo.com">fastapi.tiangolo.com</a></td>
+    <td><span class="status" style="color:var(--muted)">–&nbsp;no llms.txt</span></td>
+    <td class="num">–</td>
+    <td class="num">–</td>
+    <td class="note">llms.txt returns 404</td>
+  </tr>
+<tr>
+    <td><a href="https://kubernetes.io">kubernetes.io</a></td>
+    <td><span class="status" style="color:var(--muted)">–&nbsp;no llms.txt</span></td>
+    <td class="num">–</td>
+    <td class="num">–</td>
+    <td class="note">llms.txt returns 404</td>
+  </tr>
+<tr>
+    <td><a href="https://redis.io/docs">redis.io/docs</a></td>
+    <td><span class="status" style="color:var(--muted)">–&nbsp;no llms.txt</span></td>
+    <td class="num">–</td>
+    <td class="num">–</td>
+    <td class="note">llms.txt returns 404</td>
+  </tr>
+<tr>
+    <td><a href="https://tailwindcss.com">tailwindcss.com</a></td>
+    <td><span class="status" style="color:var(--muted)">–&nbsp;no llms.txt</span></td>
+    <td class="num">–</td>
+    <td class="num">–</td>
+    <td class="note">llms.txt returns 404</td>
+  </tr>
+<tr>
+    <td><a href="https://typescript-eslint.io">typescript-eslint.io</a></td>
+    <td><span class="status" style="color:var(--muted)">–&nbsp;no llms.txt</span></td>
+    <td class="num">–</td>
+    <td class="num">–</td>
+    <td class="note">llms.txt returns 404</td>
+  </tr>
+<tr>
+    <td><a href="https://verdaccio.org">verdaccio.org</a></td>
+    <td><span class="status" style="color:var(--muted)">–&nbsp;no llms.txt</span></td>
+    <td class="num">–</td>
+    <td class="num">–</td>
+    <td class="note">llms.txt returns 404</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<footer>
+<p>Check your own site: <code>npx llms-txt-check https://your-docs-site.com</code>, or add
+<a href="https://github.com/portdeveloper/llms-txt-check-action">the GitHub Action</a> to CI.
+Broken and want the details, or missing from the list? <a href="https://github.com/portdeveloper/llms-txt-scoreboard/issues">Open an issue</a>.</p>
+<p>Status badges per site are served from <code>badges/&lt;host&gt;.json</code> for use with shields.io endpoints.</p>
+</footer>
+</body>
+</html>

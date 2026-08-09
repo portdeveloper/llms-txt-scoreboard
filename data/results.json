@@ -1,0 +1,524 @@
+{
+  "scannedAt": "2026-08-09T08:37:25.363Z",
+  "sample": 25,
+  "results": [
+    {
+      "site": "https://trpc.io",
+      "host": "trpc.io",
+      "status": "broken",
+      "sourceProblems": [],
+      "totalLinks": 89,
+      "checked": 25,
+      "deadCount": 6,
+      "failureSamples": [
+        "https://trpc.io/docs/client/nextjs/overview (http-404)",
+        "https://trpc.io/docs/client/openapi (http-404)",
+        "https://trpc.io/docs/client/react/overview (http-404)"
+      ],
+      "warnings": 90,
+      "ms": 149
+    },
+    {
+      "site": "https://orm.drizzle.team",
+      "host": "orm.drizzle.team",
+      "status": "broken",
+      "sourceProblems": [],
+      "totalLinks": 442,
+      "checked": 25,
+      "deadCount": 4,
+      "failureSamples": [
+        "https://orm.drizzle.team/docs/pg/connect-overview (http-404)",
+        "https://orm.drizzle.team/docs/pg/indexes-constraints (http-404)",
+        "https://orm.drizzle.team/docs/pg/drizzle-config-file (http-404)"
+      ],
+      "warnings": 9,
+      "ms": 355
+    },
+    {
+      "site": "https://grafana.com/docs",
+      "host": "grafana.com/docs",
+      "status": "broken",
+      "sourceProblems": [],
+      "totalLinks": 91,
+      "checked": 25,
+      "deadCount": 3,
+      "failureSamples": [
+        "https://grafana.com/docs/learning-hub.md (http-404)",
+        "https://grafana.com/docs/learning-hub/intro-to-integrations.md (http-404)",
+        "https://grafana.com/docs/learning-hub.md#courses (http-404)"
+      ],
+      "warnings": 17,
+      "ms": 544
+    },
+    {
+      "site": "https://docs.github.com",
+      "host": "docs.github.com",
+      "status": "broken",
+      "sourceProblems": [],
+      "totalLinks": 117,
+      "checked": 25,
+      "deadCount": 1,
+      "failureSamples": [
+        "https://docs.github.com/api/article/body (http-400)"
+      ],
+      "warnings": 1,
+      "ms": 809
+    },
+    {
+      "site": "https://docs.litellm.ai",
+      "host": "docs.litellm.ai",
+      "status": "broken",
+      "sourceProblems": [],
+      "totalLinks": 52,
+      "checked": 25,
+      "deadCount": 1,
+      "failureSamples": [
+        "https://docs.litellm.ai/release_notes/archive (http-404)"
+      ],
+      "warnings": 1,
+      "ms": 99
+    },
+    {
+      "site": "https://docs.stripe.com",
+      "host": "docs.stripe.com",
+      "status": "broken",
+      "sourceProblems": [],
+      "totalLinks": 471,
+      "checked": 25,
+      "deadCount": 1,
+      "failureSamples": [
+        "https://docs.stripe.com/reports/administrative-facilitation-fee-report.md (http-404)"
+      ],
+      "warnings": 16,
+      "ms": 1621
+    },
+    {
+      "site": "https://langchain-ai.github.io/langgraph",
+      "host": "langchain-ai.github.io/langgraph",
+      "status": "broken",
+      "sourceProblems": [],
+      "totalLinks": 13,
+      "checked": 13,
+      "deadCount": 1,
+      "failureSamples": [
+        "https://docs.langchain.com/oss/python/langgraph/why-langgraph (http-404)"
+      ],
+      "warnings": 14,
+      "ms": 587
+    },
+    {
+      "site": "https://ai-sdk.dev",
+      "host": "ai-sdk.dev",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 10,
+      "checked": 10,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 2,
+      "ms": 486
+    },
+    {
+      "site": "https://bun.sh",
+      "host": "bun.sh",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 320,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 320,
+      "ms": 2546
+    },
+    {
+      "site": "https://cursor.com",
+      "host": "cursor.com",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 0,
+      "checked": 0,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 20,
+      "ms": 57
+    },
+    {
+      "site": "https://docs.anthropic.com",
+      "host": "docs.anthropic.com",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 553,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 91,
+      "ms": 1266
+    },
+    {
+      "site": "https://docs.docker.com",
+      "host": "docs.docker.com",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 39,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 1,
+      "ms": 517
+    },
+    {
+      "site": "https://docs.expo.dev",
+      "host": "docs.expo.dev",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 547,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 2,
+      "ms": 256
+    },
+    {
+      "site": "https://docs.pydantic.dev",
+      "host": "docs.pydantic.dev",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 88,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 2,
+      "ms": 390
+    },
+    {
+      "site": "https://docs.railway.com",
+      "host": "docs.railway.com",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 377,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 1,
+      "ms": 228
+    },
+    {
+      "site": "https://docs.temporal.io",
+      "host": "docs.temporal.io",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 122,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 345
+    },
+    {
+      "site": "https://elevenlabs.io/docs",
+      "host": "elevenlabs.io/docs",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 729,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 4,
+      "ms": 14859
+    },
+    {
+      "site": "https://hono.dev",
+      "host": "hono.dev",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 89,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 2,
+      "ms": 339
+    },
+    {
+      "site": "https://mintlify.com/docs",
+      "host": "mintlify.com/docs",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 241,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 7,
+      "ms": 2634
+    },
+    {
+      "site": "https://modelcontextprotocol.io",
+      "host": "modelcontextprotocol.io",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 144,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 2350
+    },
+    {
+      "site": "https://nextjs.org",
+      "host": "nextjs.org",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 35,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 30,
+      "ms": 728
+    },
+    {
+      "site": "https://posthog.com",
+      "host": "posthog.com",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 1982,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 23,
+      "ms": 1097
+    },
+    {
+      "site": "https://react.dev",
+      "host": "react.dev",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 177,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 1131
+    },
+    {
+      "site": "https://supabase.com",
+      "host": "supabase.com",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 30,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 459
+    },
+    {
+      "site": "https://svelte.dev",
+      "host": "svelte.dev",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 7,
+      "checked": 7,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 1,
+      "ms": 417
+    },
+    {
+      "site": "https://turbo.build",
+      "host": "turbo.build",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 101,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 102,
+      "ms": 886
+    },
+    {
+      "site": "https://vercel.com",
+      "host": "vercel.com",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 1734,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 393,
+      "ms": 1294
+    },
+    {
+      "site": "https://vite.dev",
+      "host": "vite.dev",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 43,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 44,
+      "ms": 865
+    },
+    {
+      "site": "https://vuejs.org",
+      "host": "vuejs.org",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 94,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 94,
+      "ms": 1233
+    },
+    {
+      "site": "https://www.prisma.io/docs",
+      "host": "www.prisma.io/docs",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 35,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 617
+    },
+    {
+      "site": "https://zod.dev",
+      "host": "zod.dev",
+      "status": "pass",
+      "sourceProblems": [],
+      "totalLinks": 313,
+      "checked": 25,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 449
+    },
+    {
+      "site": "https://biomejs.dev",
+      "host": "biomejs.dev",
+      "status": "missing",
+      "sourceProblems": [
+        "http-404"
+      ],
+      "totalLinks": 0,
+      "checked": 0,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 375
+    },
+    {
+      "site": "https://docs.astro.build",
+      "host": "docs.astro.build",
+      "status": "missing",
+      "sourceProblems": [
+        "http-404"
+      ],
+      "totalLinks": 0,
+      "checked": 0,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 45
+    },
+    {
+      "site": "https://docs.npmjs.com",
+      "host": "docs.npmjs.com",
+      "status": "missing",
+      "sourceProblems": [
+        "http-404"
+      ],
+      "totalLinks": 0,
+      "checked": 0,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 19
+    },
+    {
+      "site": "https://fastapi.tiangolo.com",
+      "host": "fastapi.tiangolo.com",
+      "status": "missing",
+      "sourceProblems": [
+        "http-404"
+      ],
+      "totalLinks": 0,
+      "checked": 0,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 61
+    },
+    {
+      "site": "https://kubernetes.io",
+      "host": "kubernetes.io",
+      "status": "missing",
+      "sourceProblems": [
+        "http-404"
+      ],
+      "totalLinks": 0,
+      "checked": 0,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 19
+    },
+    {
+      "site": "https://redis.io/docs",
+      "host": "redis.io/docs",
+      "status": "missing",
+      "sourceProblems": [
+        "http-404"
+      ],
+      "totalLinks": 0,
+      "checked": 0,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 298
+    },
+    {
+      "site": "https://tailwindcss.com",
+      "host": "tailwindcss.com",
+      "status": "missing",
+      "sourceProblems": [
+        "http-404"
+      ],
+      "totalLinks": 0,
+      "checked": 0,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 492
+    },
+    {
+      "site": "https://typescript-eslint.io",
+      "host": "typescript-eslint.io",
+      "status": "missing",
+      "sourceProblems": [
+        "http-404"
+      ],
+      "totalLinks": 0,
+      "checked": 0,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 363
+    },
+    {
+      "site": "https://verdaccio.org",
+      "host": "verdaccio.org",
+      "status": "missing",
+      "sourceProblems": [
+        "http-404"
+      ],
+      "totalLinks": 0,
+      "checked": 0,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 0,
+      "ms": 237
+    }
+  ]
+}

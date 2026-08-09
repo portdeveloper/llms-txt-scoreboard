@@ -1,0 +1,14 @@
+{
+  "name": "llms-txt-scoreboard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Weekly llms.txt health scan of major docs sites, published as a static scoreboard.",
+  "type": "module",
+  "scripts": {
+    "scan": "node scan.mjs",
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "llms-txt-check": "^0.1.4"
+  }
+}
