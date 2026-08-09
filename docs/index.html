@@ -45,10 +45,10 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
 
 <div class="tiles">
   <div class="tile"><b>40</b><span>sites scanned</span></div>
-  <div class="tile"><b style="color:var(--good)">24</b><span>✓ passing</span></div>
-  <div class="tile"><b style="color:var(--critical)">7</b><span>✗ broken</span></div>
+  <div class="tile"><b style="color:var(--good)">25</b><span>✓ passing</span></div>
+  <div class="tile"><b style="color:var(--critical)">6</b><span>✗ broken</span></div>
   <div class="tile"><b>9</b><span>– no llms.txt</span></div>
-  <div class="tile"><b>17</b><span>dead links found</span></div>
+  <div class="tile"><b>16</b><span>dead links found</span></div>
 </div>
 
 <div class="tablewrap">
@@ -75,13 +75,6 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td class="num">25 of 91</td>
     <td class="num">3</td>
     <td class="note">https://grafana.com/docs/learning-hub.md (http-404)</td>
-  </tr>
-<tr>
-    <td><a href="https://docs.github.com">docs.github.com</a></td>
-    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
-    <td class="num">25 of 117</td>
-    <td class="num">1</td>
-    <td class="note">https://docs.github.com/api/article/body (http-400)</td>
   </tr>
 <tr>
     <td><a href="https://docs.litellm.ai">docs.litellm.ai</a></td>
@@ -145,6 +138,13 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td class="num">25 of 547</td>
     <td class="num">0</td>
     <td class="note"></td>
+  </tr>
+<tr>
+    <td><a href="https://docs.github.com">docs.github.com</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">25 of 117</td>
+    <td class="num">0</td>
+    <td class="note">3 parameterized API endpoints excluded; they 400 as bare links by design (see github/docs#45452)</td>
   </tr>
 <tr>
     <td><a href="https://docs.pydantic.dev">docs.pydantic.dev</a></td>

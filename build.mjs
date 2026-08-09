@@ -36,7 +36,7 @@ const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
 
 const row = (r) => {
   const s = STATUS[r.status];
-  const note =
+  let note =
     r.status === "broken"
       ? r.deadCount > 0
         ? esc(r.failureSamples[0] || "")
@@ -46,6 +46,7 @@ const row = (r) => {
         : r.status === "error"
           ? esc(r.sourceProblems.join("; "))
           : "";
+  if (r.note) note = note ? `${note} · ${esc(r.note)}` : esc(r.note);
   const links = r.status === "missing" || r.status === "error" ? "–" : `${r.checked} of ${r.totalLinks}`;
   const dead = r.status === "broken" ? String(r.deadCount) : r.status === "pass" ? "0" : "–";
   return `<tr>

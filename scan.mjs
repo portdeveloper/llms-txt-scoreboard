@@ -4,33 +4,41 @@ import { checkSite } from "llms-txt-check";
 const SAMPLE = 25;
 const SITE_CONCURRENCY = 4;
 
-const sites = JSON.parse(readFileSync("sites.json", "utf-8"));
+const sites = JSON.parse(readFileSync("sites.json", "utf-8")).map((entry) =>
+  typeof entry === "string" ? { url: entry, ignore: [], note: "" } : { ignore: [], note: "", ...entry }
+);
 
 const hostOf = (url) => {
   const u = new URL(url);
   return u.host + (u.pathname !== "/" ? u.pathname.replace(/\/$/, "") : "");
 };
 
-async function scanOne(site) {
+async function scanOne({ url: site, ignore, note }) {
   const started = Date.now();
   try {
     const r = await checkSite(site, { sample: SAMPLE, concurrency: 6 });
+    // Per-site ignores: URL prefixes verified as working-as-designed
+    // (e.g. parameterized API endpoints), documented in the row note.
+    const failures = r.failures.filter((f) => !ignore.some((p) => f.url.startsWith(p)));
+    const ignoredCount = r.failures.length - failures.length;
     const missing = r.sourceProblems.some((p) => p.startsWith("http-404"));
     const sourceBroken = r.sourceProblems.length > 0 && !missing;
     const status = missing
       ? "missing"
-      : sourceBroken || r.failures.length > 0
+      : sourceBroken || failures.length > 0
         ? "broken"
         : "pass";
     return {
       site,
       host: hostOf(site),
       status,
+      note,
+      ignoredCount,
       sourceProblems: r.sourceProblems,
       totalLinks: r.totalLinks,
       checked: r.checked.length,
-      deadCount: r.failures.length,
-      failureSamples: r.failures.slice(0, 3).map((f) => `${f.url} (${f.problems[0]})`),
+      deadCount: failures.length,
+      failureSamples: failures.slice(0, 3).map((f) => `${f.url} (${f.problems[0]})`),
       warnings: r.lint.filter((i) => i.severity === "warning").length,
       ms: Date.now() - started,
     };
@@ -39,6 +47,8 @@ async function scanOne(site) {
       site,
       host: hostOf(site),
       status: "error",
+      note,
+      ignoredCount: 0,
       sourceProblems: [String(err?.message ?? err)],
       totalLinks: 0,
       checked: 0,
@@ -55,8 +65,8 @@ let cursor = 0;
 await Promise.all(
   Array.from({ length: SITE_CONCURRENCY }, async () => {
     while (cursor < sites.length) {
-      const site = sites[cursor++];
-      const r = await scanOne(site);
+      const entry = sites[cursor++];
+      const r = await scanOne(entry);
       results.push(r);
       console.log(`${r.status.padEnd(7)} ${r.host} (${r.deadCount} dead / ${r.checked} checked)`);
     }

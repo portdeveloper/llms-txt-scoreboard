@@ -22,7 +22,11 @@
   "https://docs.docker.com",
   "https://elevenlabs.io/docs",
   "https://docs.temporal.io",
-  "https://docs.github.com",
+  {
+    "url": "https://docs.github.com",
+    "ignore": ["https://docs.github.com/api/"],
+    "note": "3 parameterized API endpoints excluded; they 400 as bare links by design (see github/docs#45452)"
+  },
   "https://turbo.build",
   "https://trpc.io",
   "https://docs.pydantic.dev",
