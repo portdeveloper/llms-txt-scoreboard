@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-08-09T10:23:48.338Z",
+  "scannedAt": "2026-08-10T08:20:51.632Z",
   "sample": 25,
   "results": [
     {
@@ -18,7 +18,7 @@
         "https://trpc.io/docs/client/react/overview (http-404)"
       ],
       "warnings": 90,
-      "ms": 164
+      "ms": 583
     },
     {
       "site": "https://orm.drizzle.team",
@@ -36,7 +36,7 @@
         "https://orm.drizzle.team/docs/pg/drizzle-config-file (http-404)"
       ],
       "warnings": 9,
-      "ms": 299
+      "ms": 456
     },
     {
       "site": "https://grafana.com/docs",
@@ -54,7 +54,24 @@
         "https://grafana.com/docs/learning-hub.md#courses (http-404)"
       ],
       "warnings": 17,
-      "ms": 614
+      "ms": 799
+    },
+    {
+      "site": "https://vite.dev",
+      "host": "vite.dev",
+      "status": "broken",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 43,
+      "checked": 25,
+      "deadCount": 2,
+      "failureSamples": [
+        "https://vite.dev/guide/env-and-mode.md (fetch-error: This operation was aborted)",
+        "https://vite.dev/config/ssr-options.md (fetch-error: This operation was aborted)"
+      ],
+      "warnings": 44,
+      "ms": 15615
     },
     {
       "site": "https://docs.litellm.ai",
@@ -70,7 +87,7 @@
         "https://docs.litellm.ai/release_notes/archive (http-404)"
       ],
       "warnings": 1,
-      "ms": 144
+      "ms": 302
     },
     {
       "site": "https://docs.stripe.com",
@@ -86,7 +103,7 @@
         "https://docs.stripe.com/reports/administrative-facilitation-fee-report.md (http-404)"
       ],
       "warnings": 16,
-      "ms": 1554
+      "ms": 1149
     },
     {
       "site": "https://langchain-ai.github.io/langgraph",
@@ -102,7 +119,23 @@
         "https://docs.langchain.com/oss/python/langgraph/why-langgraph (http-404)"
       ],
       "warnings": 14,
-      "ms": 882
+      "ms": 623
+    },
+    {
+      "site": "https://vuejs.org",
+      "host": "vuejs.org",
+      "status": "broken",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 94,
+      "checked": 25,
+      "deadCount": 1,
+      "failureSamples": [
+        "https://vuejs.org/guide/introduction.md (fetch-error: This operation was aborted)"
+      ],
+      "warnings": 94,
+      "ms": 15389
     },
     {
       "site": "https://ai-sdk.dev",
@@ -116,7 +149,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 2,
-      "ms": 393
+      "ms": 400
     },
     {
       "site": "https://bun.sh",
@@ -130,7 +163,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 320,
-      "ms": 1745
+      "ms": 3356
     },
     {
       "site": "https://cursor.com",
@@ -144,7 +177,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 20,
-      "ms": 44
+      "ms": 197
     },
     {
       "site": "https://docs.anthropic.com",
@@ -158,7 +191,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 91,
-      "ms": 1346
+      "ms": 847
     },
     {
       "site": "https://docs.docker.com",
@@ -172,7 +205,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 225
+      "ms": 485
     },
     {
       "site": "https://docs.expo.dev",
@@ -181,12 +214,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 547,
+      "totalLinks": 548,
       "checked": 25,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 2,
-      "ms": 231
+      "ms": 329
     },
     {
       "site": "https://docs.github.com",
@@ -200,7 +233,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 257
+      "ms": 321
     },
     {
       "site": "https://docs.pydantic.dev",
@@ -214,7 +247,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 2,
-      "ms": 520
+      "ms": 528
     },
     {
       "site": "https://docs.railway.com",
@@ -228,7 +261,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 252
+      "ms": 632
     },
     {
       "site": "https://docs.temporal.io",
@@ -242,7 +275,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 154
+      "ms": 596
     },
     {
       "site": "https://elevenlabs.io/docs",
@@ -256,7 +289,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 4,
-      "ms": 441
+      "ms": 5149
     },
     {
       "site": "https://hono.dev",
@@ -270,7 +303,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 2,
-      "ms": 256
+      "ms": 299
     },
     {
       "site": "https://mintlify.com/docs",
@@ -284,7 +317,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 7,
-      "ms": 3149
+      "ms": 3062
     },
     {
       "site": "https://modelcontextprotocol.io",
@@ -298,7 +331,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 2273
+      "ms": 5203
     },
     {
       "site": "https://nextjs.org",
@@ -312,7 +345,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 30,
-      "ms": 664
+      "ms": 1210
     },
     {
       "site": "https://posthog.com",
@@ -326,7 +359,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 23,
-      "ms": 1023
+      "ms": 834
     },
     {
       "site": "https://react.dev",
@@ -340,7 +373,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 1188
+      "ms": 402
     },
     {
       "site": "https://supabase.com",
@@ -354,7 +387,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 391
+      "ms": 2207
     },
     {
       "site": "https://svelte.dev",
@@ -368,7 +401,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 168
+      "ms": 470
     },
     {
       "site": "https://turbo.build",
@@ -382,7 +415,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 102,
-      "ms": 540
+      "ms": 806
     },
     {
       "site": "https://vercel.com",
@@ -391,40 +424,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 1734,
+      "totalLinks": 1733,
       "checked": 25,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 393,
-      "ms": 499
-    },
-    {
-      "site": "https://vite.dev",
-      "host": "vite.dev",
-      "status": "pass",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 43,
-      "checked": 25,
-      "deadCount": 0,
-      "failureSamples": [],
-      "warnings": 44,
-      "ms": 110
-    },
-    {
-      "site": "https://vuejs.org",
-      "host": "vuejs.org",
-      "status": "pass",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 94,
-      "checked": 25,
-      "deadCount": 0,
-      "failureSamples": [],
-      "warnings": 94,
-      "ms": 75
+      "ms": 3583
     },
     {
       "site": "https://www.prisma.io/docs",
@@ -438,7 +443,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 475
+      "ms": 1290
     },
     {
       "site": "https://zod.dev",
@@ -452,7 +457,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 443
+      "ms": 596
     },
     {
       "site": "https://biomejs.dev",
@@ -468,7 +473,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 192
+      "ms": 314
     },
     {
       "site": "https://docs.astro.build",
@@ -484,7 +489,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 109
+      "ms": 54
     },
     {
       "site": "https://docs.npmjs.com",
@@ -500,7 +505,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 129
+      "ms": 99
     },
     {
       "site": "https://fastapi.tiangolo.com",
@@ -516,7 +521,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 62
+      "ms": 166
     },
     {
       "site": "https://kubernetes.io",
@@ -532,7 +537,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 22
+      "ms": 156
     },
     {
       "site": "https://redis.io/docs",
@@ -548,7 +553,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 413
+      "ms": 495
     },
     {
       "site": "https://tailwindcss.com",
@@ -564,7 +569,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 470
+      "ms": 241
     },
     {
       "site": "https://typescript-eslint.io",
@@ -580,7 +585,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 136
+      "ms": 191
     },
     {
       "site": "https://verdaccio.org",
@@ -596,7 +601,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 252
+      "ms": 282
     }
   ]
 }
