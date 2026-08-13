@@ -1,7 +1,6 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { checkSite } from "llms-txt-check";
 
-const SAMPLE = 25;
 const SITE_CONCURRENCY = 4;
 
 const sites = JSON.parse(readFileSync("sites.json", "utf-8")).map((entry) =>
@@ -16,7 +15,7 @@ const hostOf = (url) => {
 async function scanOne({ url: site, ignore, note }) {
   const started = Date.now();
   try {
-    const r = await checkSite(site, { sample: SAMPLE, concurrency: 6 });
+    const r = await checkSite(site, { concurrency: 6 });
     // Per-site ignores: URL prefixes verified as working-as-designed
     // (e.g. parameterized API endpoints), documented in the row note.
     const failures = r.failures.filter((f) => !ignore.some((p) => f.url.startsWith(p)));
@@ -81,6 +80,6 @@ results.sort(
 mkdirSync("data", { recursive: true });
 writeFileSync(
   "data/results.json",
-  JSON.stringify({ scannedAt: new Date().toISOString(), sample: SAMPLE, results }, null, 2)
+  JSON.stringify({ scannedAt: new Date().toISOString(), sample: null, results }, null, 2)
 );
 console.log(`\nwrote data/results.json (${results.length} sites)`);

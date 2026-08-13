@@ -17,7 +17,11 @@
   "https://docs.litellm.ai",
   "https://docs.expo.dev",
   "https://modelcontextprotocol.io",
-  "https://docs.stripe.com",
+  {
+    "url": "https://docs.stripe.com",
+    "ignore": ["https://docs.stripe.com/samples.md"],
+    "note": "samples.md excluded: answers 406 to non-browser user-agents only, ambiguous"
+  },
   "https://www.prisma.io/docs",
   "https://docs.docker.com",
   "https://elevenlabs.io/docs",

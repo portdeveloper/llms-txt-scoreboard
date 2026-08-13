@@ -101,7 +101,7 @@ footer code { font-size: .85em; }
 <body>
 <h1>llms.txt scoreboard</h1>
 <p class="sub">Weekly scan of major docs sites: does the deployed site actually serve what its llms.txt promises?
-Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-check</a> on ${esc(scannedAt.slice(0, 10))} (sampling up to 25 links per site).</p>
+Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-check</a> on ${esc(scannedAt.slice(0, 10))} (checking every listed link).</p>
 
 <div class="tiles">
   <div class="tile"><b>${counts.total}</b><span>sites scanned</span></div>
