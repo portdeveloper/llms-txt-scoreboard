@@ -9,6 +9,6 @@
     "build": "node build.mjs"
   },
   "dependencies": {
-    "llms-txt-check": "^0.1.4"
+    "llms-txt-check": "^0.1.5"
   }
 }

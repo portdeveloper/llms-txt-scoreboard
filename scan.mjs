@@ -15,7 +15,13 @@ const hostOf = (url) => {
 async function scanOne({ url: site, ignore, note }) {
   const started = Date.now();
   try {
-    const r = await checkSite(site, { concurrency: 6 });
+    let r = await checkSite(site, { concurrency: 6 });
+    // One retry when the source fetch itself failed transiently — a timeout
+    // must never publish a "broken" row (vercel.com, 2026-08-14).
+    if (r.sourceProblems.some((p) => p.startsWith("fetch-error"))) {
+      await new Promise((resolve) => setTimeout(resolve, 5000));
+      r = await checkSite(site, { concurrency: 6 });
+    }
     // Per-site ignores: URL prefixes verified as working-as-designed
     // (e.g. parameterized API endpoints), documented in the row note.
     const failures = r.failures.filter((f) => !ignore.some((p) => f.url.startsWith(p)));

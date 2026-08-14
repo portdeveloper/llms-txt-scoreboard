@@ -19,7 +19,9 @@
   "https://modelcontextprotocol.io",
   {
     "url": "https://docs.stripe.com",
-    "ignore": ["https://docs.stripe.com/samples.md"],
+    "ignore": [
+      "https://docs.stripe.com/samples.md"
+    ],
     "note": "samples.md excluded: answers 406 to non-browser user-agents only, ambiguous"
   },
   "https://www.prisma.io/docs",
@@ -28,7 +30,9 @@
   "https://docs.temporal.io",
   {
     "url": "https://docs.github.com",
-    "ignore": ["https://docs.github.com/api/"],
+    "ignore": [
+      "https://docs.github.com/api/"
+    ],
     "note": "3 parameterized API endpoints excluded; they 400 as bare links by design (see github/docs#45452)"
   },
   "https://turbo.build",
@@ -46,5 +50,64 @@
   "https://docs.npmjs.com",
   "https://redis.io/docs",
   "https://verdaccio.org",
-  "https://typescript-eslint.io"
+  "https://typescript-eslint.io",
+  "https://developers.cloudflare.com",
+  "https://console.groq.com",
+  "https://convex.dev",
+  "https://developers.raycast.com",
+  "https://docs.apify.com",
+  "https://docs.perplexity.ai",
+  "https://docs.mistral.ai",
+  "https://docs.crewai.com",
+  "https://neon.tech",
+  "https://upstash.com",
+  {
+    "url": "https://resend.com",
+    "ignore": [
+      "https://mcp.resend.com/mcp"
+    ],
+    "note": "MCP endpoint excluded: POST-only by design, 405 on GET"
+  },
+  "https://clerk.com",
+  "https://qdrant.tech",
+  {
+    "url": "https://weaviate.io",
+    "ignore": [
+      "https://github.com/weaviate/"
+    ],
+    "note": "github.com blob links excluded: render HTML by design"
+  },
+  "https://docs.pinecone.io",
+  "https://clickhouse.com",
+  "https://tanstack.com",
+  "https://nuxt.com",
+  "https://remix.run",
+  "https://payloadcms.com",
+  "https://strapi.io",
+  {
+    "url": "https://www.sanity.io",
+    "ignore": [
+      "https://www.sanity.io/docs/cli-reference/debug"
+    ],
+    "note": "one URL excluded: fetches fine in browsers, tool-side fetch issue under investigation"
+  },
+  "https://deepgram.com",
+  "https://www.assemblyai.com",
+  "https://docs.together.ai",
+  "https://openrouter.ai",
+  "https://jazz.tools",
+  "https://cog.run",
+  "https://viem.sh",
+  "https://wagmi.sh",
+  "https://effect.website",
+  "https://mastra.ai",
+  "https://docs.livekit.io",
+  {
+    "url": "https://docs.datadoghq.com",
+    "ignore": [
+      "https://docs.datadoghq.com/datadog_help/llms.txt",
+      "https://docs.datadoghq.com/search_results/llms.txt"
+    ],
+    "note": "two nested one-link index llms.txt files excluded: valid but tiny, tripped the near-empty check"
+  }
 ]
