@@ -41,14 +41,14 @@ footer code { font-size: .85em; }
 <body>
 <h1>llms.txt scoreboard</h1>
 <p class="sub">Weekly scan of major docs sites: does the deployed site actually serve what its llms.txt promises?
-Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-check</a> on 2026-08-14 (checking every listed link).</p>
+Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-check</a> on 2026-08-17 (checking every listed link).</p>
 
 <div class="tiles">
   <div class="tile"><b>74</b><span>sites scanned</span></div>
-  <div class="tile"><b style="color:var(--good)">38</b><span>✓ passing</span></div>
-  <div class="tile"><b style="color:var(--critical)">24</b><span>✗ broken</span></div>
+  <div class="tile"><b style="color:var(--good)">34</b><span>✓ passing</span></div>
+  <div class="tile"><b style="color:var(--critical)">28</b><span>✗ broken</span></div>
   <div class="tile"><b>12</b><span>– no llms.txt</span></div>
-  <div class="tile"><b>304</b><span>dead links found</span></div>
+  <div class="tile"><b>339</b><span>dead links found</span></div>
 </div>
 
 <div class="tablewrap">
@@ -84,9 +84,16 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td class="note">https://trpc.io/docs/client/links/overview (http-404)</td>
   </tr>
 <tr>
+    <td><a href="https://vercel.com">vercel.com</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">1732 of 1732</td>
+    <td class="num">19</td>
+    <td class="note">https://vercel.com/docs/organizations (http-404)</td>
+  </tr>
+<tr>
     <td><a href="https://clickhouse.com">clickhouse.com</a></td>
     <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
-    <td class="num">460 of 460</td>
+    <td class="num">461 of 461</td>
     <td class="num">18</td>
     <td class="note">https://clickhouse.com/cloud/whats-coming (http-404)</td>
   </tr>
@@ -98,11 +105,11 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td class="note">https://github.com/livekit/client-sdk-node (http-404)</td>
   </tr>
 <tr>
-    <td><a href="https://vercel.com">vercel.com</a></td>
+    <td><a href="https://elevenlabs.io/docs">elevenlabs.io/docs</a></td>
     <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
-    <td class="num">1732 of 1732</td>
-    <td class="num">18</td>
-    <td class="note">https://vercel.com/docs/organizations (http-404)</td>
+    <td class="num">746 of 746</td>
+    <td class="num">14</td>
+    <td class="note">https://elevenlabs.io/docs/overview/capabilities/forced-alignment.md (fetch-error: This operation was aborted)</td>
   </tr>
 <tr>
     <td><a href="https://grafana.com/docs">grafana.com/docs</a></td>
@@ -119,6 +126,13 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td class="note">https://console.groq.com/docs/coding-with-groq/recommended-models (http-404)</td>
   </tr>
 <tr>
+    <td><a href="https://docs.stripe.com">docs.stripe.com</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">457 of 457</td>
+    <td class="num">8</td>
+    <td class="note">https://docs.stripe.com/payment-links/buy-button.md (http-429) · samples.md excluded: answers 406 to non-browser user-agents only, ambiguous</td>
+  </tr>
+<tr>
     <td><a href="https://docs.pinecone.io">docs.pinecone.io</a></td>
     <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
     <td class="num">495 of 495</td>
@@ -126,18 +140,39 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td class="note">https://docs.pinecone.io/reference/sdks/python/reference.md (md-url-serves-html)</td>
   </tr>
 <tr>
+    <td><a href="https://qdrant.tech">qdrant.tech</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">592 of 592</td>
+    <td class="num">6</td>
+    <td class="note">https://qdrant.tech/documentation/edge/edge-fastembed-embeddings/index.md (fetch-error: This operation was aborted)</td>
+  </tr>
+<tr>
+    <td><a href="https://vuejs.org">vuejs.org</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">94 of 94</td>
+    <td class="num">6</td>
+    <td class="note">https://vuejs.org/guide/introduction.md (fetch-error: This operation was aborted)</td>
+  </tr>
+<tr>
     <td><a href="https://bun.sh">bun.sh</a></td>
     <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
-    <td class="num">320 of 320</td>
+    <td class="num">321 of 321</td>
     <td class="num">5</td>
     <td class="note">https://bun.com/docs/index.md (http-404)</td>
   </tr>
 <tr>
-    <td><a href="https://docs.stripe.com">docs.stripe.com</a></td>
+    <td><a href="https://convex.dev">convex.dev</a></td>
     <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
-    <td class="num">457 of 457</td>
+    <td class="num">40 of 40</td>
+    <td class="num">4</td>
+    <td class="note">https://docs.convex.dev/tutorial/ (fetch-error: This operation was aborted)</td>
+  </tr>
+<tr>
+    <td><a href="https://docs.apify.com">docs.apify.com</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">434 of 434</td>
     <td class="num">3</td>
-    <td class="note">https://docs.stripe.com/issuing/compliance-us/disclosure.md (http-404) · samples.md excluded: answers 406 to non-browser user-agents only, ambiguous</td>
+    <td class="note">https://docs.apify.com/sdk/js/docs/guides/type-script-actor.md (http-404)</td>
   </tr>
 <tr>
     <td><a href="https://docs.together.ai">docs.together.ai</a></td>
@@ -147,16 +182,9 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td class="note">https://docs.together.ai/external-link-02.md (md-url-serves-html)</td>
   </tr>
 <tr>
-    <td><a href="https://docs.apify.com">docs.apify.com</a></td>
-    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
-    <td class="num">434 of 434</td>
-    <td class="num">2</td>
-    <td class="note">https://docs.apify.com/sdk/js/docs/guides/type-script-actor.md (http-404)</td>
-  </tr>
-<tr>
     <td><a href="https://docs.expo.dev">docs.expo.dev</a></td>
     <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
-    <td class="num">551 of 551</td>
+    <td class="num">550 of 550</td>
     <td class="num">2</td>
     <td class="note">https://docs.expo.dev/guides/authentication.md (md-url-serves-html)</td>
   </tr>
@@ -168,13 +196,6 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td class="note">https://docs.litellm.ai/intro (http-404)</td>
   </tr>
 <tr>
-    <td><a href="https://vuejs.org">vuejs.org</a></td>
-    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
-    <td class="num">94 of 94</td>
-    <td class="num">2</td>
-    <td class="note">https://vuejs.org/api.md (near-empty-body (20 bytes))</td>
-  </tr>
-<tr>
     <td><a href="https://wagmi.sh">wagmi.sh</a></td>
     <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
     <td class="num">558 of 558</td>
@@ -184,7 +205,7 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
 <tr>
     <td><a href="https://docs.railway.com">docs.railway.com</a></td>
     <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
-    <td class="num">381 of 381</td>
+    <td class="num">382 of 382</td>
     <td class="num">1</td>
     <td class="note">https://docs.railway.com/guides.md (http-404)</td>
   </tr>
@@ -212,7 +233,7 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
 <tr>
     <td><a href="https://posthog.com">posthog.com</a></td>
     <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
-    <td class="num">1986 of 1986</td>
+    <td class="num">1988 of 1988</td>
     <td class="num">1</td>
     <td class="note">https://posthog.com/docs/self-host/deploy/troubleshooting.md (md-url-serves-html)</td>
   </tr>
@@ -224,11 +245,11 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td class="note">https://viem.sh/index (http-404)</td>
   </tr>
 <tr>
-    <td><a href="https://www.sanity.io">www.sanity.io</a></td>
-    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
-    <td class="num">741 of 741</td>
+    <td><a href="https://deepgram.com">deepgram.com</a></td>
+    <td><span class="status" style="color:var(--critical)">✗&nbsp;broken</span></td>
+    <td class="num">0 of 0</td>
     <td class="num">0</td>
-    <td class="note">one URL excluded: fetches fine in browsers, tool-side fetch issue under investigation</td>
+    <td class="note">fetch-error: fetch failed</td>
   </tr>
 <tr>
     <td><a href="https://ai-sdk.dev">ai-sdk.dev</a></td>
@@ -245,23 +266,9 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td class="note"></td>
   </tr>
 <tr>
-    <td><a href="https://convex.dev">convex.dev</a></td>
-    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
-    <td class="num">40 of 40</td>
-    <td class="num">0</td>
-    <td class="note"></td>
-  </tr>
-<tr>
     <td><a href="https://cursor.com">cursor.com</a></td>
     <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
     <td class="num">0 of 0</td>
-    <td class="num">0</td>
-    <td class="note"></td>
-  </tr>
-<tr>
-    <td><a href="https://deepgram.com">deepgram.com</a></td>
-    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
-    <td class="num">31 of 31</td>
     <td class="num">0</td>
     <td class="note"></td>
   </tr>
@@ -282,7 +289,7 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
 <tr>
     <td><a href="https://docs.anthropic.com">docs.anthropic.com</a></td>
     <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
-    <td class="num">565 of 565</td>
+    <td class="num">566 of 566</td>
     <td class="num">0</td>
     <td class="note"></td>
   </tr>
@@ -317,7 +324,7 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
 <tr>
     <td><a href="https://docs.perplexity.ai">docs.perplexity.ai</a></td>
     <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
-    <td class="num">196 of 196</td>
+    <td class="num">198 of 198</td>
     <td class="num">0</td>
     <td class="note"></td>
   </tr>
@@ -332,13 +339,6 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td><a href="https://docs.temporal.io">docs.temporal.io</a></td>
     <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
     <td class="num">122 of 122</td>
-    <td class="num">0</td>
-    <td class="note"></td>
-  </tr>
-<tr>
-    <td><a href="https://elevenlabs.io/docs">elevenlabs.io/docs</a></td>
-    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
-    <td class="num">743 of 743</td>
     <td class="num">0</td>
     <td class="note"></td>
   </tr>
@@ -395,13 +395,6 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td><a href="https://payloadcms.com">payloadcms.com</a></td>
     <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
     <td class="num">148 of 148</td>
-    <td class="num">0</td>
-    <td class="note"></td>
-  </tr>
-<tr>
-    <td><a href="https://qdrant.tech">qdrant.tech</a></td>
-    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
-    <td class="num">591 of 591</td>
     <td class="num">0</td>
     <td class="note"></td>
   </tr>
@@ -483,9 +476,16 @@ Checked with <a href="https://github.com/portdeveloper/llms-txt-check">llms-txt-
     <td class="note"></td>
   </tr>
 <tr>
+    <td><a href="https://www.sanity.io">www.sanity.io</a></td>
+    <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
+    <td class="num">740 of 740</td>
+    <td class="num">0</td>
+    <td class="note">one URL excluded: fetches fine in browsers, tool-side fetch issue under investigation</td>
+  </tr>
+<tr>
     <td><a href="https://zod.dev">zod.dev</a></td>
     <td><span class="status" style="color:var(--good)">✓&nbsp;passing</span></td>
-    <td class="num">314 of 314</td>
+    <td class="num">318 of 318</td>
     <td class="num">0</td>
     <td class="note"></td>
   </tr>
