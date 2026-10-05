@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-09-28T14:43:43.936Z",
+  "scannedAt": "2026-10-05T15:25:14.450Z",
   "sample": null,
   "results": [
     {
@@ -18,7 +18,7 @@
         "https://orm.drizzle.team/docs/pg/v0-v1-changes (http-404)"
       ],
       "warnings": 9,
-      "ms": 11323
+      "ms": 7683
     },
     {
       "site": "https://cog.run",
@@ -29,14 +29,14 @@
       "sourceProblems": [],
       "totalLinks": 98,
       "checked": 98,
-      "deadCount": 31,
+      "deadCount": 32,
       "failureSamples": [
         "https://cog.run/docs/getting-started.md (http-404)",
         "https://cog.run/docs/getting-started-own-model.md (http-404)",
         "https://cog.run/docs/notebooks.md (http-404)"
       ],
       "warnings": 223,
-      "ms": 3561
+      "ms": 2521
     },
     {
       "site": "https://trpc.io",
@@ -54,7 +54,7 @@
         "https://trpc.io/docs/client/nextjs/app-router/setup (http-404)"
       ],
       "warnings": 0,
-      "ms": 1982
+      "ms": 1631
     },
     {
       "site": "https://clickhouse.com",
@@ -63,8 +63,8 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 448,
-      "checked": 448,
+      "totalLinks": 451,
+      "checked": 451,
       "deadCount": 18,
       "failureSamples": [
         "https://clickhouse.com/pt/ai (http-404)",
@@ -72,43 +72,25 @@
         "https://clickhouse.com/pt/clickhouse (http-404)"
       ],
       "warnings": 2,
-      "ms": 16393
+      "ms": 13572
     },
     {
-      "site": "https://docs.stripe.com",
-      "host": "docs.stripe.com",
-      "status": "broken",
-      "note": "samples.md excluded: answers 406 to non-browser user-agents only, ambiguous",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 456,
-      "checked": 456,
-      "deadCount": 18,
-      "failureSamples": [
-        "https://docs.stripe.com/api/payment_methods/object.md (http-429)",
-        "https://docs.stripe.com/api/payment_methods/create.md (http-429)",
-        "https://docs.stripe.com/crypto/onramp/embedded.md (http-429)"
-      ],
-      "warnings": 14,
-      "ms": 11082
-    },
-    {
-      "site": "https://grafana.com/docs",
-      "host": "grafana.com/docs",
+      "site": "https://verdaccio.org",
+      "host": "verdaccio.org",
       "status": "broken",
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 91,
-      "checked": 91,
-      "deadCount": 16,
+      "totalLinks": 55,
+      "checked": 55,
+      "deadCount": 9,
       "failureSamples": [
-        "https://grafana.com/docs/learning-hub.md (http-404)",
-        "https://grafana.com/docs/learning-hub.md#monitor-infrastructure (http-404)",
-        "https://grafana.com/docs/learning-hub.md#explore-data (http-404)"
+        "https://www.verdaccio.org/docs/install (http-404)",
+        "https://www.verdaccio.org/docs/config (http-404)",
+        "https://www.verdaccio.org/docs/auth (http-404)"
       ],
-      "warnings": 17,
-      "ms": 2494
+      "warnings": 2,
+      "ms": 2005
     },
     {
       "site": "https://console.groq.com",
@@ -126,25 +108,7 @@
         "https://console.groq.com/docs/coding-with-groq/more-tools (http-404)"
       ],
       "warnings": 1,
-      "ms": 2669
-    },
-    {
-      "site": "https://verdaccio.org",
-      "host": "verdaccio.org",
-      "status": "broken",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 55,
-      "checked": 55,
-      "deadCount": 8,
-      "failureSamples": [
-        "https://www.verdaccio.org/docs/install (http-404)",
-        "https://www.verdaccio.org/docs/config (http-404)",
-        "https://www.verdaccio.org/docs/auth (http-404)"
-      ],
-      "warnings": 2,
-      "ms": 3019
+      "ms": 4750
     },
     {
       "site": "https://bun.sh",
@@ -162,7 +126,24 @@
         "https://bun.com/docs/bundler/index.md (http-404)"
       ],
       "warnings": 321,
-      "ms": 12712
+      "ms": 13645
+    },
+    {
+      "site": "https://ai-sdk.dev",
+      "host": "ai-sdk.dev",
+      "status": "broken",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 25,
+      "checked": 25,
+      "deadCount": 2,
+      "failureSamples": [
+        "https://www.npmjs.com/package/@mongodb-developer/vercel-ai-memory (http-403)",
+        "https://www.openpolicyagent.org/docs/policy-reference (fetch-error: fetch failed)"
+      ],
+      "warnings": 164,
+      "ms": 17458
     },
     {
       "site": "https://clerk.com",
@@ -171,32 +152,15 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 47,
-      "checked": 47,
+      "totalLinks": 48,
+      "checked": 48,
       "deadCount": 2,
       "failureSamples": [
         "https://github.com/clerk/clerk-sdk-csharp/blob/main/README.md (md-url-serves-html)",
         "https://github.com/clerk/clerk-sdk-python/blob/main/README.md (md-url-serves-html)"
       ],
       "warnings": 6,
-      "ms": 2936
-    },
-    {
-      "site": "https://docs.litellm.ai",
-      "host": "docs.litellm.ai",
-      "status": "broken",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 52,
-      "checked": 52,
-      "deadCount": 2,
-      "failureSamples": [
-        "https://docs.litellm.ai/intro (http-404)",
-        "https://docs.litellm.ai/release_notes/archive (http-404)"
-      ],
-      "warnings": 1,
-      "ms": 1445
+      "ms": 3190
     },
     {
       "site": "https://docs.together.ai",
@@ -205,15 +169,15 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 369,
-      "checked": 369,
+      "totalLinks": 368,
+      "checked": 368,
       "deadCount": 2,
       "failureSamples": [
         "https://docs.together.ai/python-library.md (md-url-serves-html)",
         "https://docs.together.ai/typescript-library.md (md-url-serves-html)"
       ],
       "warnings": 4,
-      "ms": 19520
+      "ms": 12322
     },
     {
       "site": "https://langchain-ai.github.io/langgraph",
@@ -230,7 +194,7 @@
         "https://docs.langchain.com/oss/python/langgraph/changelog-py.md (md-url-serves-html)"
       ],
       "warnings": 43,
-      "ms": 1984
+      "ms": 1346
     },
     {
       "site": "https://nuxt.com",
@@ -247,7 +211,7 @@
         "https://nuxt.com/raw/docs/guide/ai/mcp.md (http-404)"
       ],
       "warnings": 0,
-      "ms": 9115
+      "ms": 4754
     },
     {
       "site": "https://vuejs.org",
@@ -264,7 +228,7 @@
         "https://vuejs.org/tutorial.md (near-empty-body (25 bytes))"
       ],
       "warnings": 94,
-      "ms": 3585
+      "ms": 2496
     },
     {
       "site": "https://wagmi.sh",
@@ -281,7 +245,7 @@
         "https://wagmi.sh/react/guides/testing.md (near-empty-body (47 bytes))"
       ],
       "warnings": 558,
-      "ms": 6164
+      "ms": 6188
     },
     {
       "site": "https://docs.perplexity.ai",
@@ -290,30 +254,14 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 184,
-      "checked": 184,
+      "totalLinks": 167,
+      "checked": 167,
       "deadCount": 1,
       "failureSamples": [
         "https://research.perplexity.ai/articles (http-403)"
       ],
-      "warnings": 10,
-      "ms": 12364
-    },
-    {
-      "site": "https://docs.pinecone.io",
-      "host": "docs.pinecone.io",
-      "status": "broken",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 193,
-      "checked": 193,
-      "deadCount": 1,
-      "failureSamples": [
-        "https://docs.pinecone.io/_llms/pinecone-database/reference/2026-07-latest.md (fetch-error: This operation was aborted)"
-      ],
-      "warnings": 48,
-      "ms": 21928
+      "warnings": 9,
+      "ms": 4775
     },
     {
       "site": "https://docs.railway.com",
@@ -322,14 +270,14 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 409,
-      "checked": 409,
+      "totalLinks": 410,
+      "checked": 410,
       "deadCount": 1,
       "failureSamples": [
         "https://docs.railway.com/guides.md (http-404)"
       ],
       "warnings": 1,
-      "ms": 2437
+      "ms": 3267
     },
     {
       "site": "https://docs.temporal.io",
@@ -338,30 +286,14 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 137,
-      "checked": 137,
+      "totalLinks": 139,
+      "checked": 139,
       "deadCount": 1,
       "failureSamples": [
         "https://temporal.mcp.kapa.ai (http-405)"
       ],
       "warnings": 4,
-      "ms": 4063
-    },
-    {
-      "site": "https://mastra.ai",
-      "host": "mastra.ai",
-      "status": "broken",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 663,
-      "checked": 663,
-      "deadCount": 1,
-      "failureSamples": [
-        "https://mastra.ai/reference/deployer/index.md (http-404)"
-      ],
-      "warnings": 0,
-      "ms": 21241
+      "ms": 1824
     },
     {
       "site": "https://openrouter.ai",
@@ -377,7 +309,7 @@
         "https://openrouter.ai/api/v1/benchmarks (http-401)"
       ],
       "warnings": 2,
-      "ms": 1917
+      "ms": 1513
     },
     {
       "site": "https://posthog.com",
@@ -386,14 +318,14 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 2170,
-      "checked": 2170,
+      "totalLinks": 2164,
+      "checked": 2164,
       "deadCount": 1,
       "failureSamples": [
         "https://posthog.com/docs/self-host/deploy/troubleshooting.md (md-url-serves-html)"
       ],
       "warnings": 24,
-      "ms": 63968
+      "ms": 51199
     },
     {
       "site": "https://qdrant.tech",
@@ -402,14 +334,14 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 681,
-      "checked": 681,
+      "totalLinks": 684,
+      "checked": 684,
       "deadCount": 1,
       "failureSamples": [
-        "https://qdrant.tech/documentation/migrate-to-qdrant/from-elasticsearch/index.md (fetch-error: This operation was aborted)"
+        "https://qdrant.tech/documentation/hybrid-cloud/hybrid-cloud-setup/index.md (fetch-error: This operation was aborted)"
       ],
       "warnings": 1,
-      "ms": 25752
+      "ms": 22164
     },
     {
       "site": "https://supabase.com",
@@ -418,14 +350,14 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 32,
-      "checked": 32,
+      "totalLinks": 41,
+      "checked": 41,
       "deadCount": 1,
       "failureSamples": [
         "https://mcp.supabase.com/mcp (http-401)"
       ],
       "warnings": 1,
-      "ms": 1665
+      "ms": 2333
     },
     {
       "site": "https://viem.sh",
@@ -434,28 +366,14 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 651,
-      "checked": 651,
+      "totalLinks": 660,
+      "checked": 660,
       "deadCount": 1,
       "failureSamples": [
         "https://viem.sh/index (http-404)"
       ],
-      "warnings": 652,
-      "ms": 31698
-    },
-    {
-      "site": "https://ai-sdk.dev",
-      "host": "ai-sdk.dev",
-      "status": "pass",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 10,
-      "checked": 10,
-      "deadCount": 0,
-      "failureSamples": [],
-      "warnings": 2,
-      "ms": 810
+      "warnings": 661,
+      "ms": 17646
     },
     {
       "site": "https://convex.dev",
@@ -469,7 +387,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 53,
-      "ms": 2800
+      "ms": 1372
     },
     {
       "site": "https://cursor.com",
@@ -483,7 +401,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 29,
-      "ms": 136
+      "ms": 219
     },
     {
       "site": "https://deepgram.com",
@@ -497,7 +415,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 24,
-      "ms": 2808
+      "ms": 2341
     },
     {
       "site": "https://developers.cloudflare.com",
@@ -506,12 +424,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 107,
-      "checked": 107,
+      "totalLinks": 113,
+      "checked": 113,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 1755
+      "ms": 1085
     },
     {
       "site": "https://developers.raycast.com",
@@ -525,7 +443,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 4293
+      "ms": 4068
     },
     {
       "site": "https://docs.anthropic.com",
@@ -534,12 +452,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 637,
-      "checked": 637,
+      "totalLinks": 753,
+      "checked": 753,
       "deadCount": 0,
       "failureSamples": [],
-      "warnings": 123,
-      "ms": 21133
+      "warnings": 132,
+      "ms": 25167
     },
     {
       "site": "https://docs.apify.com",
@@ -548,12 +466,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 457,
-      "checked": 457,
+      "totalLinks": 458,
+      "checked": 458,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 11,
-      "ms": 9459
+      "ms": 5722
     },
     {
       "site": "https://docs.crewai.com",
@@ -567,7 +485,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 34,
-      "ms": 31116
+      "ms": 10196
     },
     {
       "site": "https://docs.datadoghq.com",
@@ -581,7 +499,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 3499
+      "ms": 1358
     },
     {
       "site": "https://docs.docker.com",
@@ -590,12 +508,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 37,
-      "checked": 37,
+      "totalLinks": 35,
+      "checked": 35,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 1692
+      "ms": 691
     },
     {
       "site": "https://docs.expo.dev",
@@ -604,12 +522,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 558,
-      "checked": 558,
+      "totalLinks": 560,
+      "checked": 560,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 3,
-      "ms": 8488
+      "ms": 5969
     },
     {
       "site": "https://docs.github.com",
@@ -623,7 +541,21 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 6652
+      "ms": 3941
+    },
+    {
+      "site": "https://docs.litellm.ai",
+      "host": "docs.litellm.ai",
+      "status": "pass",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 893,
+      "checked": 893,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 16,
+      "ms": 9242
     },
     {
       "site": "https://docs.livekit.io",
@@ -637,7 +569,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 2,
-      "ms": 3556
+      "ms": 3626
     },
     {
       "site": "https://docs.mistral.ai",
@@ -646,12 +578,26 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 287,
-      "checked": 287,
+      "totalLinks": 295,
+      "checked": 295,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 3828
+      "ms": 5730
+    },
+    {
+      "site": "https://docs.pinecone.io",
+      "host": "docs.pinecone.io",
+      "status": "pass",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 193,
+      "checked": 193,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 48,
+      "ms": 6024
     },
     {
       "site": "https://docs.pydantic.dev",
@@ -665,7 +611,21 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 2,
-      "ms": 2239
+      "ms": 1979
+    },
+    {
+      "site": "https://docs.stripe.com",
+      "host": "docs.stripe.com",
+      "status": "pass",
+      "note": "samples.md excluded: answers 406 to non-browser user-agents only, ambiguous",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 456,
+      "checked": 456,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 14,
+      "ms": 15442
     },
     {
       "site": "https://elevenlabs.io/docs",
@@ -674,12 +634,26 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 770,
-      "checked": 770,
+      "totalLinks": 786,
+      "checked": 786,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 4,
-      "ms": 96551
+      "ms": 104192
+    },
+    {
+      "site": "https://grafana.com/docs",
+      "host": "grafana.com/docs",
+      "status": "pass",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 91,
+      "checked": 91,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 17,
+      "ms": 1981
     },
     {
       "site": "https://hono.dev",
@@ -688,12 +662,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 90,
-      "checked": 90,
+      "totalLinks": 91,
+      "checked": 91,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 2,
-      "ms": 1572
+      "ms": 1159
     },
     {
       "site": "https://jazz.tools",
@@ -702,12 +676,26 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 40,
-      "checked": 40,
+      "totalLinks": 42,
+      "checked": 42,
       "deadCount": 0,
       "failureSamples": [],
-      "warnings": 41,
-      "ms": 2459
+      "warnings": 43,
+      "ms": 2377
+    },
+    {
+      "site": "https://mastra.ai",
+      "host": "mastra.ai",
+      "status": "pass",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 692,
+      "checked": 692,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 15,
+      "ms": 16794
     },
     {
       "site": "https://mintlify.com/docs",
@@ -716,12 +704,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 117,
-      "checked": 117,
+      "totalLinks": 119,
+      "checked": 119,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 31,
-      "ms": 11266
+      "ms": 12381
     },
     {
       "site": "https://modelcontextprotocol.io",
@@ -735,7 +723,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 6,
-      "ms": 29469
+      "ms": 18800
     },
     {
       "site": "https://neon.tech",
@@ -744,12 +732,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 274,
-      "checked": 274,
+      "totalLinks": 277,
+      "checked": 277,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 13,
-      "ms": 8682
+      "ms": 7724
     },
     {
       "site": "https://nextjs.org",
@@ -758,12 +746,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 48,
-      "checked": 48,
+      "totalLinks": 49,
+      "checked": 49,
       "deadCount": 0,
       "failureSamples": [],
-      "warnings": 40,
-      "ms": 2873
+      "warnings": 41,
+      "ms": 1631
     },
     {
       "site": "https://payloadcms.com",
@@ -777,7 +765,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 5380
+      "ms": 3293
     },
     {
       "site": "https://react.dev",
@@ -791,7 +779,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 2180
+      "ms": 4014
     },
     {
       "site": "https://resend.com",
@@ -800,12 +788,12 @@
       "note": "MCP endpoint excluded: POST-only by design, 405 on GET",
       "ignoredCount": 1,
       "sourceProblems": [],
-      "totalLinks": 42,
-      "checked": 42,
+      "totalLinks": 44,
+      "checked": 44,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 18,
-      "ms": 4083
+      "ms": 2481
     },
     {
       "site": "https://svelte.dev",
@@ -819,7 +807,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 457
+      "ms": 433
     },
     {
       "site": "https://tanstack.com",
@@ -832,8 +820,8 @@
       "checked": 38,
       "deadCount": 0,
       "failureSamples": [],
-      "warnings": 24,
-      "ms": 4701
+      "warnings": 25,
+      "ms": 3172
     },
     {
       "site": "https://turbo.build",
@@ -847,7 +835,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 111,
-      "ms": 2779
+      "ms": 1836
     },
     {
       "site": "https://upstash.com",
@@ -860,8 +848,8 @@
       "checked": 22,
       "deadCount": 0,
       "failureSamples": [],
-      "warnings": 3,
-      "ms": 831
+      "warnings": 4,
+      "ms": 868
     },
     {
       "site": "https://vercel.com",
@@ -870,12 +858,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 24,
-      "checked": 24,
+      "totalLinks": 25,
+      "checked": 25,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 2,
-      "ms": 1954
+      "ms": 1504
     },
     {
       "site": "https://vite.dev",
@@ -889,7 +877,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 44,
-      "ms": 1305
+      "ms": 1127
     },
     {
       "site": "https://weaviate.io",
@@ -903,7 +891,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 31,
-      "ms": 1586
+      "ms": 1003
     },
     {
       "site": "https://www.assemblyai.com",
@@ -917,7 +905,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 1422
+      "ms": 1541
     },
     {
       "site": "https://www.prisma.io/docs",
@@ -926,12 +914,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 37,
-      "checked": 37,
+      "totalLinks": 38,
+      "checked": 38,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 2095
+      "ms": 2363
     },
     {
       "site": "https://www.sanity.io",
@@ -940,12 +928,12 @@
       "note": "one URL excluded: fetches fine in browsers, tool-side fetch issue under investigation",
       "ignoredCount": 1,
       "sourceProblems": [],
-      "totalLinks": 773,
-      "checked": 773,
+      "totalLinks": 776,
+      "checked": 776,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 35162
+      "ms": 32133
     },
     {
       "site": "https://zod.dev",
@@ -959,7 +947,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 12256
+      "ms": 7629
     },
     {
       "site": "https://biomejs.dev",
@@ -975,7 +963,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 364
+      "ms": 341
     },
     {
       "site": "https://docs.astro.build",
@@ -991,7 +979,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 286
+      "ms": 152
     },
     {
       "site": "https://docs.npmjs.com",
@@ -1007,7 +995,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 166
+      "ms": 153
     },
     {
       "site": "https://effect.website",
@@ -1023,7 +1011,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 642
+      "ms": 221
     },
     {
       "site": "https://fastapi.tiangolo.com",
@@ -1039,7 +1027,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 250
+      "ms": 214
     },
     {
       "site": "https://kubernetes.io",
@@ -1055,7 +1043,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 230
+      "ms": 139
     },
     {
       "site": "https://redis.io/docs",
@@ -1071,7 +1059,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 561
+      "ms": 478
     },
     {
       "site": "https://remix.run",
@@ -1087,7 +1075,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 270
+      "ms": 421
     },
     {
       "site": "https://strapi.io",
@@ -1103,7 +1091,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 203
+      "ms": 179
     },
     {
       "site": "https://tailwindcss.com",
@@ -1119,7 +1107,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 391
+      "ms": 361
     },
     {
       "site": "https://typescript-eslint.io",
@@ -1135,7 +1123,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 149
+      "ms": 283
     }
   ]
 }
