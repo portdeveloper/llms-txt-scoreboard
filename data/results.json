@@ -1,7 +1,25 @@
 {
-  "scannedAt": "2026-11-16T16:40:25.971Z",
+  "scannedAt": "2026-11-23T18:55:47.204Z",
   "sample": null,
   "results": [
+    {
+      "site": "https://docs.mistral.ai",
+      "host": "docs.mistral.ai",
+      "status": "broken",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 562,
+      "checked": 562,
+      "deadCount": 475,
+      "failureSamples": [
+        "https://docs.mistral.ai/admin/admin-api/api-reference.md (http-404)",
+        "https://docs.mistral.ai/admin/admin-api/authentication.md (http-404)",
+        "https://docs.mistral.ai/admin/admin-api/manage-groups-roles.md (http-404)"
+      ],
+      "warnings": 0,
+      "ms": 7882
+    },
     {
       "site": "https://orm.drizzle.team",
       "host": "orm.drizzle.team",
@@ -18,7 +36,7 @@
         "https://orm.drizzle.team/docs/pg/v0-v1-changes (http-404)"
       ],
       "warnings": 15,
-      "ms": 8359
+      "ms": 9884
     },
     {
       "site": "https://cog.run",
@@ -36,7 +54,43 @@
         "https://cog.run/docs/notebooks.md (http-404)"
       ],
       "warnings": 221,
-      "ms": 2760
+      "ms": 1765
+    },
+    {
+      "site": "https://mastra.ai",
+      "host": "mastra.ai",
+      "status": "broken",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 809,
+      "checked": 809,
+      "deadCount": 25,
+      "failureSamples": [
+        "https://mastra.ai/docs/mastra-platform/gateway/api/create-chat-completion.md (http-404)",
+        "https://mastra.ai/docs/mastra-platform/gateway/api/create-response.md (http-404)",
+        "https://mastra.ai/docs/mastra-platform/gateway/api/get-response.md (http-404)"
+      ],
+      "warnings": 15,
+      "ms": 15441
+    },
+    {
+      "site": "https://docs.crewai.com",
+      "host": "docs.crewai.com",
+      "status": "broken",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 743,
+      "checked": 743,
+      "deadCount": 14,
+      "failureSamples": [
+        "https://docs.crewai.com/_llms/en/v1-15-25.txt (fetch-error: This operation was aborted)",
+        "https://docs.crewai.com/_llms/pt-br/v1-15-23/documentacao.txt (fetch-error: This operation was aborted)",
+        "https://docs.crewai.com/_llms/pt-br/v1-15-9.txt (fetch-error: This operation was aborted)"
+      ],
+      "warnings": 314,
+      "ms": 272294
     },
     {
       "site": "https://verdaccio.org",
@@ -54,7 +108,7 @@
         "https://www.verdaccio.org/docs/auth (http-404)"
       ],
       "warnings": 2,
-      "ms": 1710
+      "ms": 1036
     },
     {
       "site": "https://console.groq.com",
@@ -72,7 +126,7 @@
         "https://console.groq.com/docs/coding-with-groq/more-tools (http-404)"
       ],
       "warnings": 1,
-      "ms": 4744
+      "ms": 4513
     },
     {
       "site": "https://bun.sh",
@@ -90,61 +144,7 @@
         "https://bun.com/docs/bundler/index.md (http-404)"
       ],
       "warnings": 321,
-      "ms": 9247
-    },
-    {
-      "site": "https://wagmi.sh",
-      "host": "wagmi.sh",
-      "status": "broken",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 559,
-      "checked": 559,
-      "deadCount": 5,
-      "failureSamples": [
-        "https://wagmi.sh/react/getting-started.md (fetch-error: fetch failed)",
-        "https://wagmi.sh/react/guides/error-handling.md (fetch-error: fetch failed)",
-        "https://wagmi.sh/react/api/connectors/mock.md (fetch-error: fetch failed)"
-      ],
-      "warnings": 559,
-      "ms": 6304
-    },
-    {
-      "site": "https://nuxt.com",
-      "host": "nuxt.com",
-      "status": "broken",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 436,
-      "checked": 436,
-      "deadCount": 4,
-      "failureSamples": [
-        "https://nuxt.com/raw/docs/4.x/getting-started/introduction.md (fetch-error: fetch failed)",
-        "https://nuxt.com/raw/docs/4.x/getting-started/views.md (fetch-error: fetch failed)",
-        "https://nuxt.com/mcp (http-405)"
-      ],
-      "warnings": 0,
-      "ms": 7828
-    },
-    {
-      "site": "https://docs.crewai.com",
-      "host": "docs.crewai.com",
-      "status": "broken",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 707,
-      "checked": 707,
-      "deadCount": 3,
-      "failureSamples": [
-        "https://docs.crewai.com/_llms/en/v1-15-20.txt (fetch-error: This operation was aborted)",
-        "https://docs.crewai.com/_llms/ar/v1-15-22/altqnyt-altwthyq.txt (fetch-error: This operation was aborted)",
-        "https://docs.crewai.com/_llms/ar/v1-15-3/altqnyt-altwthyq.txt (fetch-error: This operation was aborted)"
-      ],
-      "warnings": 299,
-      "ms": 251469
+      "ms": 6780
     },
     {
       "site": "https://clerk.com",
@@ -157,11 +157,11 @@
       "checked": 49,
       "deadCount": 2,
       "failureSamples": [
-        "https://github.com/clerk/clerk-sdk-csharp/blob/main/README.md (md-url-serves-html)",
-        "https://github.com/clerk/clerk-sdk-python/blob/main/README.md (md-url-serves-html)"
+        "https://github.com/clerk/clerk-sdk-csharp/blob/main/README.md (http-503)",
+        "https://github.com/clerk/clerk-sdk-python/blob/main/README.md (http-503)"
       ],
       "warnings": 6,
-      "ms": 4422
+      "ms": 2244
     },
     {
       "site": "https://clickhouse.com",
@@ -178,7 +178,7 @@
         "https://clickhouse.com/docs/mcp (http-406)"
       ],
       "warnings": 8,
-      "ms": 1935
+      "ms": 5164
     },
     {
       "site": "https://docs.pinecone.io",
@@ -187,15 +187,15 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 198,
-      "checked": 198,
+      "totalLinks": 196,
+      "checked": 196,
       "deadCount": 2,
       "failureSamples": [
         "https://docs.pinecone.io/reference/pg-pinecone/sql-reference.md (md-url-serves-html)",
-        "https://docs.pinecone.io/reference/pg-pinecone/operator-runbook.md (md-url-serves-html)"
+        "https://docs.pinecone.io/reference/pg-pinecone/operator-runbook.md (http-503)"
       ],
       "warnings": 51,
-      "ms": 5508
+      "ms": 3095
     },
     {
       "site": "https://docs.together.ai",
@@ -204,15 +204,15 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 435,
-      "checked": 435,
+      "totalLinks": 430,
+      "checked": 430,
       "deadCount": 2,
       "failureSamples": [
         "https://docs.together.ai/python-library.md (md-url-serves-html)",
         "https://docs.together.ai/typescript-library.md (md-url-serves-html)"
       ],
-      "warnings": 4,
-      "ms": 21285
+      "warnings": 3,
+      "ms": 17606
     },
     {
       "site": "https://langchain-ai.github.io/langgraph",
@@ -229,7 +229,7 @@
         "https://docs.langchain.com/oss/python/langgraph/changelog-py.md (md-url-serves-html)"
       ],
       "warnings": 43,
-      "ms": 1228
+      "ms": 2811
     },
     {
       "site": "https://mintlify.com/docs",
@@ -238,15 +238,49 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 114,
-      "checked": 114,
+      "totalLinks": 116,
+      "checked": 116,
       "deadCount": 2,
       "failureSamples": [
         "mailto:sales@mintlify.com (fetch-error: fetch failed)",
         "mailto:sales@mintlify.com (fetch-error: fetch failed)"
       ],
       "warnings": 32,
-      "ms": 7718
+      "ms": 2764
+    },
+    {
+      "site": "https://nuxt.com",
+      "host": "nuxt.com",
+      "status": "broken",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 437,
+      "checked": 437,
+      "deadCount": 2,
+      "failureSamples": [
+        "https://nuxt.com/mcp (http-405)",
+        "https://nuxt.com/raw/docs/guide/ai/mcp.md (http-404)"
+      ],
+      "warnings": 0,
+      "ms": 7359
+    },
+    {
+      "site": "https://vercel.com",
+      "host": "vercel.com",
+      "status": "broken",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 99,
+      "checked": 99,
+      "deadCount": 2,
+      "failureSamples": [
+        "https://vercel.com/solutions/marketing-sites.md (md-url-serves-html)",
+        "https://vercel.com/docs/llms-full.txt (fetch-error: This operation was aborted)"
+      ],
+      "warnings": 23,
+      "ms": 18177
     },
     {
       "site": "https://vuejs.org",
@@ -263,7 +297,40 @@
         "https://vuejs.org/tutorial.md (near-empty-body (25 bytes))"
       ],
       "warnings": 94,
-      "ms": 2695
+      "ms": 2030
+    },
+    {
+      "site": "https://wagmi.sh",
+      "host": "wagmi.sh",
+      "status": "broken",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 559,
+      "checked": 559,
+      "deadCount": 2,
+      "failureSamples": [
+        "https://wagmi.sh/core/guides/testing.md (near-empty-body (46 bytes))",
+        "https://wagmi.sh/react/guides/testing.md (near-empty-body (47 bytes))"
+      ],
+      "warnings": 559,
+      "ms": 3283
+    },
+    {
+      "site": "https://deepgram.com",
+      "host": "deepgram.com",
+      "status": "broken",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 61,
+      "checked": 61,
+      "deadCount": 1,
+      "failureSamples": [
+        "https://github.com/pipecat-ai/pipecat/blob/main/examples/voice/voice-deepgram-flux.py (http-503)"
+      ],
+      "warnings": 60,
+      "ms": 2062
     },
     {
       "site": "https://docs.temporal.io",
@@ -272,14 +339,30 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 142,
-      "checked": 142,
+      "totalLinks": 143,
+      "checked": 143,
       "deadCount": 1,
       "failureSamples": [
         "https://temporal.mcp.kapa.ai (http-405)"
       ],
       "warnings": 6,
-      "ms": 2839
+      "ms": 1818
+    },
+    {
+      "site": "https://elevenlabs.io/docs",
+      "host": "elevenlabs.io/docs",
+      "status": "broken",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 79,
+      "checked": 79,
+      "deadCount": 1,
+      "failureSamples": [
+        "https://elevenlabs.io/docs/api-reference/studio/delete-project.md (http-502)"
+      ],
+      "warnings": 1,
+      "ms": 5119
     },
     {
       "site": "https://openrouter.ai",
@@ -288,14 +371,14 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 44,
-      "checked": 44,
+      "totalLinks": 51,
+      "checked": 51,
       "deadCount": 1,
       "failureSamples": [
         "https://openrouter.ai/api/v1/benchmarks (http-401)"
       ],
       "warnings": 3,
-      "ms": 1789
+      "ms": 1380
     },
     {
       "site": "https://posthog.com",
@@ -304,14 +387,14 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 2100,
-      "checked": 2100,
+      "totalLinks": 2099,
+      "checked": 2099,
       "deadCount": 1,
       "failureSamples": [
         "https://posthog.com/docs/self-host/deploy/troubleshooting.md (md-url-serves-html)"
       ],
       "warnings": 24,
-      "ms": 43596
+      "ms": 32182
     },
     {
       "site": "https://qdrant.tech",
@@ -320,14 +403,14 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 87,
-      "checked": 87,
+      "totalLinks": 83,
+      "checked": 83,
       "deadCount": 1,
       "failureSamples": [
         "https://app.drata.com/trust/9cbbb75b-0c38-11ee-865f-029d78a187d9 (http-403)"
       ],
       "warnings": 2,
-      "ms": 2923
+      "ms": 2673
     },
     {
       "site": "https://resend.com",
@@ -342,8 +425,8 @@
       "failureSamples": [
         "https://resend.com/docs/knowledge-base/why-are-my-emails-going-to-spam.md (md-url-serves-html)"
       ],
-      "warnings": 20,
-      "ms": 3896
+      "warnings": 21,
+      "ms": 2475
     },
     {
       "site": "https://supabase.com",
@@ -352,30 +435,14 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 43,
-      "checked": 43,
+      "totalLinks": 44,
+      "checked": 44,
       "deadCount": 1,
       "failureSamples": [
         "https://mcp.supabase.com/mcp (http-401)"
       ],
       "warnings": 1,
-      "ms": 2544
-    },
-    {
-      "site": "https://vercel.com",
-      "host": "vercel.com",
-      "status": "broken",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 28,
-      "checked": 28,
-      "deadCount": 1,
-      "failureSamples": [
-        "https://vercel.com/docs/llms-full.txt (fetch-error: This operation was aborted)"
-      ],
-      "warnings": 3,
-      "ms": 15210
+      "ms": 878
     },
     {
       "site": "https://viem.sh",
@@ -391,7 +458,7 @@
         "https://viem.sh/index (http-404)"
       ],
       "warnings": 676,
-      "ms": 19510
+      "ms": 12405
     },
     {
       "site": "https://ai-sdk.dev",
@@ -407,7 +474,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 35004
+      "ms": 35002
     },
     {
       "site": "https://convex.dev",
@@ -421,7 +488,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 53,
-      "ms": 1909
+      "ms": 1293
     },
     {
       "site": "https://cursor.com",
@@ -435,21 +502,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 29,
-      "ms": 128
-    },
-    {
-      "site": "https://deepgram.com",
-      "host": "deepgram.com",
-      "status": "pass",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 31,
-      "checked": 31,
-      "deadCount": 0,
-      "failureSamples": [],
-      "warnings": 22,
-      "ms": 1501
+      "ms": 56
     },
     {
       "site": "https://developers.cloudflare.com",
@@ -463,7 +516,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 1284
+      "ms": 723
     },
     {
       "site": "https://developers.raycast.com",
@@ -477,7 +530,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 5316
+      "ms": 3286
     },
     {
       "site": "https://docs.anthropic.com",
@@ -486,12 +539,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 916,
-      "checked": 916,
+      "totalLinks": 958,
+      "checked": 958,
       "deadCount": 0,
       "failureSamples": [],
-      "warnings": 186,
-      "ms": 22448
+      "warnings": 205,
+      "ms": 17296
     },
     {
       "site": "https://docs.apify.com",
@@ -505,7 +558,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 10,
-      "ms": 1681
+      "ms": 1465
     },
     {
       "site": "https://docs.datadoghq.com",
@@ -514,12 +567,12 @@
       "note": "two nested one-link index llms.txt files excluded: valid but tiny, tripped the near-empty check",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 77,
-      "checked": 77,
+      "totalLinks": 78,
+      "checked": 78,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 1760
+      "ms": 1180
     },
     {
       "site": "https://docs.docker.com",
@@ -528,12 +581,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 42,
-      "checked": 42,
+      "totalLinks": 52,
+      "checked": 52,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 1785
+      "ms": 686
     },
     {
       "site": "https://docs.expo.dev",
@@ -542,12 +595,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 618,
-      "checked": 618,
+      "totalLinks": 620,
+      "checked": 620,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 3,
-      "ms": 6388
+      "ms": 3987
     },
     {
       "site": "https://docs.github.com",
@@ -561,7 +614,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 6628
+      "ms": 2790
     },
     {
       "site": "https://docs.litellm.ai",
@@ -570,12 +623,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 546,
-      "checked": 546,
+      "totalLinks": 559,
+      "checked": 559,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 17,
-      "ms": 3684
+      "ms": 4564
     },
     {
       "site": "https://docs.livekit.io",
@@ -589,21 +642,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 2,
-      "ms": 4538
-    },
-    {
-      "site": "https://docs.mistral.ai",
-      "host": "docs.mistral.ai",
-      "status": "pass",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 550,
-      "checked": 550,
-      "deadCount": 0,
-      "failureSamples": [],
-      "warnings": 0,
-      "ms": 14124
+      "ms": 5196
     },
     {
       "site": "https://docs.perplexity.ai",
@@ -612,12 +651,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 207,
-      "checked": 207,
+      "totalLinks": 217,
+      "checked": 217,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 8,
-      "ms": 8201
+      "ms": 3070
     },
     {
       "site": "https://docs.pydantic.dev",
@@ -631,7 +670,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 2,
-      "ms": 1843
+      "ms": 1691
     },
     {
       "site": "https://docs.railway.com",
@@ -640,12 +679,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 417,
-      "checked": 417,
+      "totalLinks": 422,
+      "checked": 422,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 4973
+      "ms": 3127
     },
     {
       "site": "https://docs.stripe.com",
@@ -659,21 +698,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 19,
-      "ms": 14561
-    },
-    {
-      "site": "https://elevenlabs.io/docs",
-      "host": "elevenlabs.io/docs",
-      "status": "pass",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 79,
-      "checked": 79,
-      "deadCount": 0,
-      "failureSamples": [],
-      "warnings": 1,
-      "ms": 5844
+      "ms": 12418
     },
     {
       "site": "https://grafana.com/docs",
@@ -687,7 +712,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 8,
-      "ms": 2500
+      "ms": 1738
     },
     {
       "site": "https://hono.dev",
@@ -701,7 +726,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 2,
-      "ms": 1602
+      "ms": 1289
     },
     {
       "site": "https://jazz.tools",
@@ -710,26 +735,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 56,
-      "checked": 56,
+      "totalLinks": 62,
+      "checked": 62,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 1435
-    },
-    {
-      "site": "https://mastra.ai",
-      "host": "mastra.ai",
-      "status": "pass",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [],
-      "totalLinks": 772,
-      "checked": 772,
-      "deadCount": 0,
-      "failureSamples": [],
-      "warnings": 15,
-      "ms": 18139
+      "ms": 1682
     },
     {
       "site": "https://modelcontextprotocol.io",
@@ -742,8 +753,8 @@
       "checked": 365,
       "deadCount": 0,
       "failureSamples": [],
-      "warnings": 6,
-      "ms": 5033
+      "warnings": 1,
+      "ms": 4365
     },
     {
       "site": "https://neon.tech",
@@ -757,7 +768,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 30,
-      "ms": 5349
+      "ms": 3626
     },
     {
       "site": "https://nextjs.org",
@@ -766,12 +777,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 53,
-      "checked": 53,
+      "totalLinks": 54,
+      "checked": 54,
       "deadCount": 0,
       "failureSamples": [],
-      "warnings": 46,
-      "ms": 1469
+      "warnings": 47,
+      "ms": 1475
     },
     {
       "site": "https://payloadcms.com",
@@ -785,7 +796,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 2877
+      "ms": 2710
     },
     {
       "site": "https://react.dev",
@@ -799,7 +810,21 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 4173
+      "ms": 3521
+    },
+    {
+      "site": "https://remix.run",
+      "host": "remix.run",
+      "status": "pass",
+      "note": "",
+      "ignoredCount": 0,
+      "sourceProblems": [],
+      "totalLinks": 5,
+      "checked": 5,
+      "deadCount": 0,
+      "failureSamples": [],
+      "warnings": 5,
+      "ms": 598
     },
     {
       "site": "https://svelte.dev",
@@ -813,7 +838,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 1,
-      "ms": 518
+      "ms": 215
     },
     {
       "site": "https://tanstack.com",
@@ -822,12 +847,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 39,
-      "checked": 39,
+      "totalLinks": 40,
+      "checked": 40,
       "deadCount": 0,
       "failureSamples": [],
-      "warnings": 25,
-      "ms": 2102
+      "warnings": 27,
+      "ms": 2253
     },
     {
       "site": "https://trpc.io",
@@ -836,12 +861,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 90,
-      "checked": 90,
+      "totalLinks": 91,
+      "checked": 91,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 6362
+      "ms": 1367
     },
     {
       "site": "https://turbo.build",
@@ -850,12 +875,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 110,
-      "checked": 110,
+      "totalLinks": 111,
+      "checked": 111,
       "deadCount": 0,
       "failureSamples": [],
-      "warnings": 111,
-      "ms": 3665
+      "warnings": 112,
+      "ms": 2566
     },
     {
       "site": "https://upstash.com",
@@ -864,12 +889,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 25,
-      "checked": 25,
+      "totalLinks": 27,
+      "checked": 27,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 11,
-      "ms": 1238
+      "ms": 879
     },
     {
       "site": "https://vite.dev",
@@ -883,7 +908,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 44,
-      "ms": 1279
+      "ms": 1096
     },
     {
       "site": "https://weaviate.io",
@@ -892,12 +917,12 @@
       "note": "github.com blob links excluded: render HTML by design",
       "ignoredCount": 1,
       "sourceProblems": [],
-      "totalLinks": 14,
-      "checked": 14,
+      "totalLinks": 15,
+      "checked": 15,
       "deadCount": 0,
       "failureSamples": [],
-      "warnings": 34,
-      "ms": 1563
+      "warnings": 35,
+      "ms": 1036
     },
     {
       "site": "https://www.assemblyai.com",
@@ -906,12 +931,12 @@
       "note": "",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 32,
-      "checked": 32,
+      "totalLinks": 34,
+      "checked": 34,
       "deadCount": 0,
       "failureSamples": [],
-      "warnings": 2,
-      "ms": 1209
+      "warnings": 3,
+      "ms": 1466
     },
     {
       "site": "https://www.prisma.io/docs",
@@ -925,7 +950,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 2111
+      "ms": 1294
     },
     {
       "site": "https://www.sanity.io",
@@ -934,12 +959,12 @@
       "note": "one URL excluded: fetches fine in browsers, tool-side fetch issue under investigation",
       "ignoredCount": 0,
       "sourceProblems": [],
-      "totalLinks": 137,
-      "checked": 137,
+      "totalLinks": 138,
+      "checked": 138,
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 2,
-      "ms": 21692
+      "ms": 19023
     },
     {
       "site": "https://zod.dev",
@@ -953,7 +978,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 6866
+      "ms": 8440
     },
     {
       "site": "https://biomejs.dev",
@@ -969,7 +994,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 368
+      "ms": 124
     },
     {
       "site": "https://docs.astro.build",
@@ -985,7 +1010,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 120
+      "ms": 75
     },
     {
       "site": "https://docs.npmjs.com",
@@ -1001,7 +1026,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 173
+      "ms": 90
     },
     {
       "site": "https://effect.website",
@@ -1017,7 +1042,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 374
+      "ms": 540
     },
     {
       "site": "https://fastapi.tiangolo.com",
@@ -1033,7 +1058,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 135
+      "ms": 119
     },
     {
       "site": "https://kubernetes.io",
@@ -1049,7 +1074,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 189
+      "ms": 186
     },
     {
       "site": "https://redis.io/docs",
@@ -1065,23 +1090,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 386
-    },
-    {
-      "site": "https://remix.run",
-      "host": "remix.run",
-      "status": "missing",
-      "note": "",
-      "ignoredCount": 0,
-      "sourceProblems": [
-        "http-404"
-      ],
-      "totalLinks": 0,
-      "checked": 0,
-      "deadCount": 0,
-      "failureSamples": [],
-      "warnings": 0,
-      "ms": 261
+      "ms": 304
     },
     {
       "site": "https://strapi.io",
@@ -1097,7 +1106,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 229
+      "ms": 223
     },
     {
       "site": "https://tailwindcss.com",
@@ -1113,7 +1122,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 487
+      "ms": 333
     },
     {
       "site": "https://typescript-eslint.io",
@@ -1129,7 +1138,7 @@
       "deadCount": 0,
       "failureSamples": [],
       "warnings": 0,
-      "ms": 181
+      "ms": 132
     }
   ]
 }
